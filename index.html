@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba's Bakehouse - Fresh Homemade Bakes</title>
+    <meta name="description" content="Fresh, homemade bakes with cozy, comforting vibes. Pre-order your favorite treats from our cozy home bakery.">
+    <meta name="author" content="Saba's Bakehouse">
+    
+    <meta property="og:title" content="Saba's Bakehouse - Fresh Homemade Bakes">
+    <meta property="og:description" content="Fresh, homemade bakes with cozy, comforting vibes. Pre-order your favorite treats from our cozy home bakery.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <p id="toast-message"></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <img src="src/assets/teddy-mascot.png" alt="Teddy Mascot" class="navbar-logo">
+                <span class="navbar-title">Saba's Bakehouse</span>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-mascot">
+                    <img src="src/assets/teddy-mascot.png" alt="Teddy Bear Baker">
+                </div>
+                <h1>Welcome to Saba's Bakehouse 🧸🍰</h1>
+                <p>Fresh, homemade bakes with cozy, comforting vibes.</p>
+                <button class="btn btn-primary" onclick="scrollToSection('menu')">View Menu</button>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-icon">🍪</div>
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>Classic, chewy, and full of chocolate chunks</p>
+                    <p class="price">$5 each or 6 for $27</p>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-icon">🍌</div>
+                    <h3>Banana Bread</h3>
+                    <p>Moist, sweet, and perfect for breakfast or tea time</p>
+                    <p class="price">Full Loaf: $30 | Half Loaf: $15</p>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-icon">🧁</div>
+                    <h3>Saffron Tres Leches Cake Cup</h3>
+                    <p>Rich, creamy tres leches with a hint of saffron</p>
+                    <p class="price">$6.99</p>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-icon">☕</div>
+                    <h3>Karak Chai</h3>
+                    <p>Strong, spiced tea that warms the soul</p>
+                    <p class="price">$5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-icon">❤️</div>
+                <h2 class="section-title">About Saba's Bakehouse</h2>
+                <div class="about-text">
+                    <p>Hi there 👋 I'm Saba! Baking is my happy place — I genuinely love every step, from mixing the batter to watching loaves rise in the oven, to carefully packing each order.</p>
+                    <p>For me, it's not just about desserts; it's about the smile that a box of baked goods can bring and the warmth that homemade treats add to someone's day.</p>
+                    <p>I specialize in cookies and loaves, with a soft spot for cozy & traditional style inspired flavors. All bakes are made fresh on a <strong>pre-order basis</strong> to keep that homemade taste and quality in every bite.</p>
+                    <p>Saba's Bakehouse is proud to serve our local community with treats that feel like a warm hug.</p>
+                    <p class="about-signature">Baked with love, served with care 🧸</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"The chocolate chip cookies are absolutely divine! You can taste the love in every bite. Perfect for my family gatherings!"</p>
+                    <p class="review-author">— Sarah M.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Saba's banana bread is the best I've ever had. Moist, flavorful, and always fresh. It's my weekly treat now!"</p>
+                    <p class="review-author">— Ahmed K.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Such a cozy, homemade feel! The saffron tres leches is unique and delicious. Highly recommend supporting this local gem!"</p>
+                    <p class="review-author">— Priya L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="order-info">
+                    <h2 class="section-title">How to Place an Order</h2>
+                    <p class="order-intro">Placing an order is simple and cozy — just like our bakes 💌</p>
+                    
+                    <div class="contact-methods">
+                        <p><strong>You can:</strong></p>
+                        <ul>
+                            <li>📱 Message me on Instagram: <a href="https://instagram.com/yourinsta_here" target="_blank">@yourinsta_here</a></li>
+                            <li>📧 Email: <a href="mailto:sababakehouse@gmail.com">sababakehouse@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    
+                    <p class="catering-notice">I also take catering and bulk orders with a minimum <strong>2 weeks' notice</strong> so there's enough time to plan, prep, and bake everything fresh.</p>
+                    
+                    <div class="order-details">
+                        <p><strong>For each order, please share:</strong></p>
+                        <ul>
+                            <li>What you'd like to order (cookies, loaves, or custom box)</li>
+                            <li>Quantity</li>
+                            <li>Preferred pickup/delivery date</li>
+                            <li>Any flavor preferences or notes</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="order-response">I'll get back to you with availability, pricing details, and next steps. 🤎</p>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Or Send an Inquiry</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="order">Order Details</label>
+                            <textarea id="order" name="order" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Pickup/Delivery Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <p class="form-notice">Please allow 2–3 days' notice for custom orders.</p>
+                        
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Saba's Bakehouse — Baked with Love 🧸</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
